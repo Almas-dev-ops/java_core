@@ -1,4 +1,4 @@
-package oop.basics.lesson7;
+package oop.basics.lesson7.zoo;
 
 import java.util.Arrays;
 
