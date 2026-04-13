@@ -1,0 +1,19 @@
+package oop.annonymous_classes;
+
+public class Runner {
+    public static void main(String[] args) {
+        Alive dog = new Alive() {
+            @Override
+            public void eat() {
+                System.out.println("Dog eat");
+            }
+
+            @Override
+            public void breath() {
+                System.out.println("Dog breath");
+            }
+        };
+        dog.breath();
+        dog.eat();
+    }
+}
