@@ -1,0 +1,26 @@
+package oop.class_object.equals_hashcode_practice;
+
+public class User {
+    private String login;
+    private String password;
+
+    public User(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    public boolean equals(Object o) {
+        if (o == null) {
+            return false;
+        }
+        if (o instanceof  User anotherUser) {
+            return  this.login.equals(anotherUser.login) && this.password.equals(anotherUser.password);
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.login.hashCode();
+    }
+
+}
