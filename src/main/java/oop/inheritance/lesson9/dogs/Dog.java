@@ -1,6 +1,6 @@
 package oop.inheritance.lesson9.dogs;
 
-public abstract class Dog {
+public abstract class Dog extends Alive {
     protected final int countLegs = 4;
     public int countTeeth;
 
@@ -20,9 +20,6 @@ public abstract class Dog {
         System.out.println("Собака ест");
     }
 
-    public void breath(){
-        System.out.println("Пудель дышит");
-    }
 
     public abstract void run();
 }
